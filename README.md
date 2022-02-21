@@ -1,2 +1,1 @@
-# what-eat
-왓잇! 뭐 먹지?
+# [왓잇! 뭐 먹지?](https://whateat.ml)
