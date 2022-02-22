@@ -31,10 +31,30 @@ div {
   font-size: 4vh;
 }
 
+#category {
+  background-color: rgba(0, 0, 0, 0);
+  flex-direction: row;
+}
+
+input {
+  display: none;
+}
+
+input + label {
+  background-color: rgba(192, 96, 0, 0.1);
+  padding: 1vh;
+  border-radius: 1vh;
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+input:checked + label {
+  background-color: rgba(192, 96, 0, 0.2);
+}
+
 #button {
-  width: 30vh;
-  height: 10vh;
-  border-radius: 3vh;
+  padding: 2vh;
+  border-radius: 1vh;
   align-items: center;
   justify-content: center;
   font-size: 3vh;
