@@ -76,7 +76,7 @@ const places = [
   ],
 ];
 
-const result = document.getElementById("result");
+let selected;
 
 const korean = document.getElementById("korean");
 const chinese = document.getElementById("chinese");
@@ -85,7 +85,6 @@ const vietnamese = document.getElementById("vietnamese");
 const indian = document.getElementById("indian");
 const western = document.getElementById("western");
 
-let selected;
 let length;
 
 function select() {
@@ -127,9 +126,17 @@ western.addEventListener("change", select);
 
 select();
 
+const result = document.getElementById("result");
+
 function random() {
   let place = selected[Math.floor(Math.random() * length)];
   result.innerHTML = `<a href="${place[1]}"><u>${place[0]}</u><br /><br />${place[2]}<br />${place[3]}</a>`;
 }
 
 document.getElementById("button").addEventListener("click", random);
+
+const guide = document.getElementById("guide");
+
+guide.addEventListener("click", () => {
+  guide.style.display = "none";
+});
