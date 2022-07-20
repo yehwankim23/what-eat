@@ -1,1 +1,1 @@
-# [왓잇! 뭐 먹지?](https://whateat.ml)
+# [왓잇! 뭐 먹지?](https://whateat.netlify.app)
