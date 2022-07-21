@@ -130,7 +130,14 @@ const result = document.getElementById("result");
 
 function random() {
   let place = selected[Math.floor(Math.random() * length)];
-  result.innerHTML = `<a href="${place[1]}"><u>${place[0]}</u><br /><br />${place[2]}<br />${place[3]}</a>`;
+  result.innerHTML = `
+    <a href="${place[1]}" target="_blank">
+      <u>${place[0]}</u><br />
+      <br />
+      ${place[2]}<br />
+      ${place[3]}
+    </a>
+  `;
 }
 
 document.getElementById("button").addEventListener("click", random);
